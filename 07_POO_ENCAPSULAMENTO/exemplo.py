@@ -30,3 +30,14 @@ ana.apresentar()
 
 ana.__salario = 5000
 ana.apresentar()
+
+#0 try/except é um bloco usado em programação para tra
+try:
+    ana.salario = 10000
+except AttributeError:
+    print("Não é permitido alterar o salário diretamente")
+
+try:
+    print(ana.__salario)
+except AttributeError:
+    print("O atributo __salario nao pode ser acessado de fora")
